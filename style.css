@@ -1,0 +1,67 @@
+:root 
+{
+    --introAndEmailSignUpBg: hsl(217, 28%, 15%);
+    --mainBg: hsl(218, 28%, 13%);
+    --footerBg: hsl(216, 53%, 9%);
+    --testimonialsBg: hsl(219, 30%, 18%);
+    --blank: white;
+
+    --gradient-1: linear-gradient(135deg, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    --Error: hsl(0, 100%, 63%);
+
+    --font-raleway: "Raleway", sans-serif;
+}
+
+
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+p 
+{
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 1.71rem;
+    line-height: 1.5;
+}
+
+h2, h3, h4
+{
+    font-size: 1.28rem;
+    line-height: 1.33;
+}
+
+
+
+
+.btn {
+    font-size: inherit;
+    font-family: var(--font-raleway);
+    border-radius: 24px;
+    padding: 1.14em 5.71em;
+    border:none;
+    transition: filter 300ms;
+    cursor: pointer;
+}
+
+.btn:hover
+{
+    filter:brightness(120%);
+}
+
+
+.btn-1 
+{
+    color: var(--blank);
+    background: var(--gradient-1);
+}
