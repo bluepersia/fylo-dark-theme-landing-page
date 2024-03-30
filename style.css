@@ -48,7 +48,6 @@ h2, h3, h4
     font-size: inherit;
     font-family: var(--font-raleway);
     border-radius: 24px;
-    padding: 1.14em 5.71em;
     border:none;
     transition: filter 300ms;
     cursor: pointer;
@@ -59,9 +58,46 @@ h2, h3, h4
     filter:brightness(120%);
 }
 
-
-.btn-1 
+.btn-1, .btn-2 
 {
     color: var(--blank);
     background: var(--gradient-1);
+}
+
+
+.btn-1 
+{
+    padding: 1.14em 5.71em;
+}
+
+.btn-2 
+{
+    padding: 1.14em 1.85em;
+}
+
+.textfield_wrapper {
+    position: relative;
+}
+
+.textfield {
+    border-radius: 32px;
+    border:none;
+    padding: 1.25em 2.33em;
+    font-size: .85rem;
+}
+
+.textfield_error {
+    position: absolute;
+    opacity: 0%;
+    bottom: 0px;
+    pointer-events: none;
+    font-size: .71rem;
+    font-weight: bold;
+    color: var(--Error);
+    transition: opacity 300ms;
+}
+
+
+.textfield_wrapper.invalid .textfield_error {
+    opacity: 100%;
 }
