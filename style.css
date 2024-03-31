@@ -78,6 +78,10 @@ h4 {
     position: relative;
 }
 
+.textfield_wrapper.invalid {
+    padding-bottom: 1em;
+}
+
 .textfield {
     border-radius: 32px;
     border: none;
@@ -90,12 +94,15 @@ h4 {
     position: absolute;
     opacity: 0%;
     bottom: 0px;
+    padding-left:2.8em;
+    transform: translateY(50%);
     pointer-events: none;
     font-size: .71rem;
     font-weight: bold;
     color: var(--Error);
     transition: opacity 300ms;
 }
+
 
 
 .textfield_wrapper.invalid .textfield_error {
@@ -378,6 +385,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: start;
     gap: 1.7em;
 }
 
