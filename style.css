@@ -304,11 +304,12 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1.71em;
+    align-items: center;
 }
 
 .testimonials::before {
     content: '';
-    left: 0px;
+    left: calc(50% - 170px);
     top: 0px;
     position: absolute;
     transform: translateY(-50%);
@@ -591,6 +592,7 @@ body {
         height: 100px;
         position: absolute;
         z-index: -1;
+        left: 0px;
     }
    
     .testimonials {
