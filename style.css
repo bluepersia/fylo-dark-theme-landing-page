@@ -397,6 +397,7 @@ body {
 
 .footer {
     padding: 18.5em 7.4% 3.71em;
+    background-color: var(--footerBg);
 }
 
 .footer_logo {
